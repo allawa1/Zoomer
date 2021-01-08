@@ -21,6 +21,7 @@ function Login(){
 
     return (
         <div>
+
             <GoogleLogin
                 clientId={clientID}
                 buttonText="Login"
@@ -37,6 +38,7 @@ function Login(){
                 fields="name,email,picture"
                 callback={responseFacebook} 
                 />
+
         </div>
     )
 }
