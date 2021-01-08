@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 
 import '../App.css';
+import './Credits';
 
 const Footer = () => {
     return (
         <div className="footer">
 
-            <h1><a href="">Credits</a></h1>
-
+            <h4><Link to="/Credits">Credits</Link></h4>
         </div>
     )
 }
