@@ -23,7 +23,7 @@
 
 .App-header {
   display: inline;
-  background-color: rgb(21, 67, 96);
+  background-color: rgb(173, 235, 235);
   min-height: 20vh;
   display: flex;
   align-items: center;
@@ -111,7 +111,7 @@
 
 /* ----------- HEADER BG DIV ------------- */
 .header-bg-div {
-  background-color: rgb(21, 67, 96);
+  background-color: rgb(173, 235, 235);
 }
 
 /* ----------- LOGIN ------------- */
@@ -124,26 +124,17 @@
 
 /* ----------- DASHBOARD ------------- */
 
-.dashboard-header {
 
-  align-items: center;
-}
-
-.dashboard-div {
-  margin: 2%;
-  display: inline-block;
-  align-items: center;
-}
-.column {
-  
+ .column {
   float: left;
   width: 25%;
   padding: 3%;
-}
+} 
+
 
 .row {
-  display: table;
-  margin-left: 15%;
+  display: flex;
+
 }
 
 .row:after {
@@ -151,13 +142,13 @@
   display: table;
   clear: both;
 }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+ 
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 50px;
   text-align: center;
   background-color: #f1f1f1;
-}
+} 
 /* ----------- FOOTER ------------- */
 
 .footer {
@@ -167,5 +158,5 @@
   padding: 1%;
   color: white;
   font-family: "Baumans";
-  background-color: rgb(21, 67, 96);
+  background-color: rgb(173, 235, 235);
 }
