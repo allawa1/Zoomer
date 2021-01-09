@@ -4,6 +4,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 
 import Dashboard from './Dashboard';
 import Login from './Login';
+import About from './About';
 
 import '../App.css';
 
@@ -20,20 +21,27 @@ const Header = () => {
             <ul className="App-navbar">    
                 <li><Link to="/Dashboard">Dashboard</Link></li>
 
-                <li class="dropdown"><a href="javascript:void(0)">Login</a>
+                <li class="dropdown"><Link to="/Login">Login</Link>
                     <div className="dropdown-content">
                         <Login />
+
                     </div>
                 </li>
 
-                <li><Link to="/SignUp">Sign Up</Link></li>
+                <li><Link to="/About">About</Link></li>
             </ul>  
+
+
+
+            <input className="searchbar" type="text" placeholder="search"/>
+
+            
 
         </div>
 
 
-    
     </div>
+
 
     )
 }

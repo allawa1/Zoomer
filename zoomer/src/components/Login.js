@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 
+import '../App.css';
+
 
 const clientID = '315221332011-2jhmuo70avtsapis9cmn6af4are8qsj6.apps.googleusercontent.com'
 
@@ -20,8 +22,9 @@ function Login(){
     }
 
     return (
-        <div>
+        <div className="login">
 
+            <div className="login-id">
             <GoogleLogin
                 clientId={clientID}
                 buttonText="Login"
@@ -31,14 +34,16 @@ function Login(){
                 style={{marginTop: '100px' }}
                 isSignedIn={true}
             />
-            <br/>
+            </div>
+
+            <div className="login-id">
             <FacebookLogin
                 appId="386997969259212"
                 autoLoad={true}
                 fields="name,email,picture"
                 callback={responseFacebook} 
                 />
-
+            </div>
         </div>
     )
 }
