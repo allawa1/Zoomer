@@ -1,14 +1,25 @@
-import Login from './components/Login'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Dashboard from './components/Dashboard';
 
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
+        <Header/>
       </header>
+      
       <main>
-        <Login/>
+
+        <Switch>
+          <Route exact path="/Dashboard" component={Dashboard} />        
+        </Switch>
+
       </main>
+
+      <Footer />
     </div>
   );
 }
