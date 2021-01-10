@@ -6,6 +6,8 @@ import Credits from './components/Credits';
 
 import { Route, Switch } from 'react-router-dom';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -27,7 +29,10 @@ function App() {
 
       </main>
 
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
+      
     </div>
   );
 }

@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { Link } from 'react-router-dom';
+
 /* import ReactGridDetailExpansion from 'react-expandable-grid';
 
  */
+
+
 
 import '../App.css';
 
@@ -58,21 +63,43 @@ const Dashboard = () => {
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                 <div className="card">
-                    <h4 >events</h4>
+                    <h2 ><Link to="/">Today's Events</Link></h2>
                  </div>
                  </div>
 
                 <div className="column" onclick="openTab('b1')" >
                 <div className="card">
-                    <h4>events</h4>
+                    <h2><Link to="/">Virtual Training</Link></h2>
                  </div>
                  </div>
 
                 <div className="column" onclick="openTab('b1')" >
                 <div className="card">
-                    <h4>events</h4>
+                    <h2><Link to="/">Social Gatherings</Link></h2>
                  </div>
                  </div>
+
+            </div>
+            
+            <div className="row" >
+                <div className="column" onclick="openTab('b1')" >
+                <div className="card">
+                    <h2 ><Link to="/">Today's Events</Link></h2>
+                 </div>
+                 </div>
+
+                <div className="column" onclick="openTab('b1')" >
+                <div className="card">
+                    <h2><Link to="/">Virtual Training</Link></h2>
+                 </div>
+                 </div>
+
+                <div className="column" onclick="openTab('b1')" >
+                <div className="card">
+                    <h2><Link to="/">Join Podcast Community</Link></h2>
+                 </div>
+                 </div>
+
 
             </div>
 
