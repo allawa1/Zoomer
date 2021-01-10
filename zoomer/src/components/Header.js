@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import Logout from './Logout'
-import Dashboard from './Dashboard';
 import Login from './Login';
+
 
 import '../App.css';
 
@@ -20,21 +19,28 @@ const Header = () => {
             <ul className="App-navbar">    
                 <li><Link to="/Dashboard">Dashboard</Link></li>
 
-                <li class="dropdown"><a href="javascript:void(0)">Login</a>
+                <li className="dropdown"><Link to="/Login">Login</Link>
                     <div className="dropdown-content">
                         <Login />
-                        <Logout/>
+                        
+
                     </div>
                 </li>
 
-                <li><Link to="/SignUp">Sign Up</Link></li>
+                <li><Link to="/About">About</Link></li>
             </ul>  
+
+
+
+            <input className="searchbar" type="text" placeholder="search"/>
+
+            
 
         </div>
 
 
-    
     </div>
+
 
     )
 }
