@@ -1,6 +1,8 @@
 .body, html {
   height: 100%;
   width: 100%;
+  font-family: "Capriola";
+
 }
 
 /* -------------- HEADER ------------ */
@@ -21,7 +23,13 @@
   }
 }
 
+
 .App-header {
+  background-image: url("./assets/images/header_city.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  width: 100%;
+  bottom: 0px;
   display: inline;
   background-color: rgb(173, 235, 235);
   min-height: 20vh;
@@ -29,7 +37,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
   padding: 5%;
 
 }
@@ -72,7 +79,7 @@
 
 .nav-dropdown, a{
   text-decoration: none;
-  color: white;
+  color: rgb(0, 77, 77);
 
 }
 
@@ -87,8 +94,11 @@
   display: block;
   padding: 1%;
   border: solid;
-  border-color: rgb(21, 67, 96);
+  border-color: rgb(173, 235, 235);
+
 }
+
+
 
 .dropdown-content {
   display: none;
@@ -105,9 +115,13 @@
   border: solid;
   border-radius: 999px;
   padding: 2%;
+  border-color: rgb(173, 235, 235);
 
 }
 
+input {
+  outline: none;
+}
 
 /* ----------- HEADER BG DIV ------------- */
 .header-bg-div {
@@ -117,23 +131,34 @@
 /* ----------- LOGIN ------------- */
 
 .login {  
+    margin-top: 10%;
 
-    margin-bottom: 10%;
 }
 
+.login-id {
+  margin: 3%;
+}
 
 /* ----------- DASHBOARD ------------- */
 
+.dashboard-div a {
+  text-decoration: none;
+  color: black;
+
+}
 
  .column {
-  float: left;
-  width: 25%;
+  display: inline-block;
+  align-items: center;
+  width: 30%;
   padding: 3%;
+
 } 
 
 
 .row {
   display: flex;
+  margin-left: 3%;
 
 }
 
@@ -148,15 +173,27 @@
   padding: 50px;
   text-align: center;
   background-color: #f1f1f1;
+
 } 
+
+ .card:hover {
+  transform: scale(1.1);
+ }
 /* ----------- FOOTER ------------- */
 
 .footer {
-  position: relative;
+  margin-top: 10%;
+  position: absolute;
   width: 100%;
-  bottom: 0;
   padding: 1%;
-  color: white;
   font-family: "Baumans";
-  background-color: rgb(173, 235, 235);
+  background-color: rgb(0, 77, 77);
+}
+
+.Credits > a {
+  color: white;
+}
+
+.Credits a:hover {
+  color: 	rgb(212, 230, 241);
 }

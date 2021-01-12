@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="footer">
 
-            <h4><Link to="/Credits">Credits</Link></h4>
+            <h4 className="Credits"><Link to="/Credits">Credits</Link></h4>
         </div>
     )
 }
