@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Route, Link, Switch } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
+import Logout from './Logout'
 import SearchIcon from '@material-ui/icons/Search';
 
 import Dashboard from './Dashboard';
 import Login from './Login';
-import About from './About';
+
 
 
 
@@ -26,9 +25,10 @@ const Header = () => {
             <ul className="App-navbar">    
                 <li><Link to="/Dashboard">Dashboard</Link></li>
 
-                <li class="dropdown"><Link to="/Login">Login</Link>
+                <li className="dropdown"><Link to="/Login">Login</Link>
                     <div className="dropdown-content">
                         <Login />
+                        
 
                     </div>
                 </li>
