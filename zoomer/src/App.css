@@ -90,11 +90,10 @@
 
 
 .dropdown:hover .dropdown-content {
-  margin: 1%;
+  margin: 4%;
   display: block;
   padding: 1%;
-  border: solid;
-  border-color: rgb(173, 235, 235);
+
 
 }
 
@@ -109,13 +108,20 @@
 
 }
 
+li .loginProfile {
+  height: 40px;
+  display: flex;
+  float: right;
+
+}
+
+
 
 /* ----------- SEARCH ------------- */
 .searchbar {
-  border: solid;
   border-radius: 999px;
   padding: 2%;
-  border-color: rgb(173, 235, 235);
+
 
 }
 
@@ -131,13 +137,9 @@ input {
 /* ----------- LOGIN ------------- */
 
 .login {  
-    margin-top: 10%;
-
+  margin-top: 10%;
 }
 
-.login-id {
-  margin: 3%;
-}
 
 /* ----------- DASHBOARD ------------- */
 
