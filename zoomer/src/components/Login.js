@@ -59,7 +59,7 @@ class Login extends Component {
             }
         
             return (
-                <div>
+                <div className="login">
                     <GoogleLogin
                         clientId={clientID}
                         buttonText="Login"
