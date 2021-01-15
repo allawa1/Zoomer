@@ -6,8 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Dashboard from './Dashboard';
 import Login from './Login';
 
-
-
+import profile from '../assets/images/profile.png';
 
 import '../App.css';
 
@@ -25,21 +24,26 @@ const Header = () => {
             <ul className="App-navbar">    
                 <li><Link to="/Dashboard">Dashboard</Link></li>
 
-                <li className="dropdown"><Link to="/Login">Login</Link>
-                    <div className="dropdown-content">
-                        <Login />
-                        
-
-                    </div>
-                </li>
-
                 <li><Link to="/About">About</Link></li>
-            </ul>  
-
-                <input className="searchbar" type="text" placeholder="search"/>
-            <SearchIcon fontSize="small"/>
             
 
+
+
+
+            </ul>  
+
+                <li className="dropdown">
+                    <Link to="/Login">
+                        <img src={profile} alt="login profile" className="loginProfile"/>
+                    </Link>
+                    <div className="dropdown-content">
+                        <Login />
+                    </div>
+                </li>
+            <input className="searchbar" type="text" placeholder="search"/>
+            <Link to="/">
+            <SearchIcon fontSize="small"/>
+            </Link>
         </div>
 
 
