@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 
 import '../App.css';
+import { EventisGrid } from './EventGrid';
 
 
 class Dashboard extends Component {
@@ -29,7 +30,7 @@ class Dashboard extends Component {
             <div className="dashboard-header">
                 <h1>Dashboard</h1>
             </div>
-
+                <EventisGrid/>
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
