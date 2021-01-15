@@ -24,6 +24,7 @@
 .App-header {
   background-image: url("./assets/images/sunrise.jpg");
   background-repeat: no-repeat;
+
   background-size: 100% 200%;
   background-position: center center;
   
@@ -59,8 +60,6 @@
   list-style-type: none;
   font-family: "Baumans";
   padding: 18px;
-
-
 }
 
 
@@ -165,7 +164,7 @@ input {
   display: table;
   clear: both;
 }
- 
+
  .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 50px;
@@ -195,4 +194,105 @@ input {
 
 .Credits a:hover {
   color: 	rgb(212, 230, 241);
+}
+
+
+.sub-nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      color: green;
+}
+.sub-nav li {
+          transition: background-color 0.3s;
+          cursor: pointer;
+          height: 50px;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+.sub-nav a {
+              color: green;
+          }
+
+          .sub-nav:hover {
+              background-color: #b400ff17;
+          }
+  
+.events-grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: 5px;
+}
+
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position-y: center;
+}
+
+
+
+.flip-card-back {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-family: Caveat, sans-serif;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1030px) {
+
+  .events-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .sub-nav a {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .events-grid {
+      margin: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sub-nav a {
+      font-size: 0.8rem;
+  }
 }

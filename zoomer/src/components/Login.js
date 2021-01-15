@@ -25,7 +25,7 @@ class Login extends Component {
                 ProviderId: 'Google'
             };
             
-            axios.post('http://localhost:5000/api/login/socialmediaData', 
+            axios.post('http://localhost:5000/api/login', 
             googleresponse)
                 .then((result)=> {
                     let responseJson = result;
@@ -53,7 +53,6 @@ class Login extends Component {
                 console.log(response);
             }
             const responseGoogle = (response) => {
-                console.log(response);
                 var res = response.profileObj;
                 console.log(res);
                 this.signup(response);
