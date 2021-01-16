@@ -24,7 +24,7 @@ const Header = () => {
         <div className="navbar-header">
             <ul className="App-navbar">    
                 <li><Link to="/Dashboard">Dashboard</Link></li>
-                <li><Link to="/About">About</Link></li>
+                <li><Link to="/About">About</Link></li>      
             </ul>  
 
         </div>
