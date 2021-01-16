@@ -6,6 +6,7 @@ import Login from './components/Login'
 import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
+import Form from './components/Form'
 
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';
@@ -24,6 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Landing}/>
           <Route exact path="/Dashboard" component={Dashboard} />
+          <Route exact path="/Form" component={Form} />                
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
           <Route exact path="/About" component={About} />                        
