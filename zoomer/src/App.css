@@ -172,7 +172,7 @@ input {
 }
 
  .card {
-  box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 8px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 50px;
   text-align: center;
   background-color: rgb(177, 205, 205);
@@ -188,6 +188,31 @@ input {
   transform: scale(1.1);
 
  }
+
+
+.host-event {
+  background-color: rgb(249, 249, 6);
+
+}
+
+h2 > .host-event {
+    color: rgb(15, 138, 56);
+}
+
+form {
+  display: block;
+  align-items: right;
+  line-height: 40px;
+}
+
+form input{
+  padding: 6px;
+  font-size: 11pt;
+}
+
+input {
+  margin: 15px;
+}
 
 /* ----------- ABOUT ------------- */
 

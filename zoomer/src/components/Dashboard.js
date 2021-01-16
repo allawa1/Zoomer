@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 
+import Form from './Form';
+
 import '../App.css';
 
 
@@ -75,13 +77,13 @@ class Dashboard extends Component {
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Sports</Link></h2>
+                        <h2><Link to="/">Arts & Culture</Link></h2>
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
-                    <div className="card">
-                        <h2><Link to="/">Arts & Culture</Link></h2>
+                    <div className="card host-event">
+                        <h2 ><Link to="/Form">Host an event!</Link></h2>
                     </div>
                 </div>
 
