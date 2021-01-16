@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import { Link } from 'react-router-dom';
+import SearchIcon from '@material-ui/icons/Search';
 
 import '../App.css';
-import { EventisGrid } from './EventGrid';
 
 
 class Dashboard extends Component {
@@ -28,9 +28,23 @@ class Dashboard extends Component {
     return (
         <div className="dashboard-div">
             <div className="dashboard-header">
-                <h1>Dashboard</h1>
+
+                    <input className="searchbar" type="text" placeholder="search"/>
+                    <Link to="/">
+                    <SearchIcon fontSize="small"/>
+                    </Link>
+
             </div>
-                <EventisGrid/>
+
+                <section className="sub-nav">
+                    <ul>
+                        <li><Link to={'/all'}>All events</Link></li>
+                        <li><Link to={'/yours'}>Your events</Link></li>
+                        <li><Link to={'/today'}>Today</Link></li>
+                    </ul>
+                </section>
+
+
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
@@ -40,13 +54,13 @@ class Dashboard extends Component {
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Virtual Training</Link></h2>
+                        <h2><Link to="/">Career</Link></h2>
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Social Gatherings</Link></h2>
+                        <h2><Link to="/">Education</Link></h2>
                     </div>
                 </div>
 
@@ -55,19 +69,19 @@ class Dashboard extends Component {
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2 ><Link to="/">Today's Events</Link></h2>
+                        <h2 ><Link to="/">Volunteer</Link></h2>
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Virtual Training</Link></h2>
+                        <h2><Link to="/">Sports</Link></h2>
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Join Podcast Community</Link></h2>
+                        <h2><Link to="/">Arts & Culture</Link></h2>
                     </div>
                 </div>
 

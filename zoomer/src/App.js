@@ -7,6 +7,11 @@ import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
 
+import Alexia from './components/Alexia';
+import Daisy from './components/Daisy';
+import Christy from './components/Christy';
+
+
 
 function App() {
   return (
@@ -22,7 +27,9 @@ function App() {
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
           <Route exact path="/About" component={About} />                        
-          
+          <Route exact path="/Alexia" component={Alexia} />                
+          <Route exact path="/Daisy" component={Daisy} />                 
+          <Route exact path="/Christy" component={Christy} />   
         </Switch>
       </main>
 
