@@ -13,14 +13,16 @@ const About = () => {
 
             <div className="AboutSection">
                 <h2>About Company</h2>
-                <p>ZOOMER was founded on the idea of connecting online users to conferences, 
-                    <br/>volunteering opportunities, hiring events and many more across the globe, virtually!</p>
+                <p><b>ZOOMER</b> was founded on the idea of connecting online users 
+                   <br/> to training seminars, volunteering opportunities, hiring events 
+                   <br /> and many more services across the globe, virtually!</p>
                 <br />
-                <p>We have an opportunity to make education and career services more accessible 
-                    <br />through online services with the help of our global partners.</p>
+                <p>We have an opportunity to help make worldwide events and personal goals
+                    <br />even more accessible through our online platform.</p>
                 <br />
-                <p>Teachers, sports enthusiasts and traveling nomads 
-                    <br />can join virtual meetups, attend webinars or explore new hobbies.</p>
+                <p>Traveling nomads, students, teachers and athletes
+                    <br />can join virtual meetups, attend webinars or explore new hobbies 
+                    <br />with the help of our global partners.</p>
                 <br />
                 <br />
                 <Link to="./Dashboard" ><h3>Click here to get started!</h3></Link>
