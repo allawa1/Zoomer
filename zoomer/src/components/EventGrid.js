@@ -36,7 +36,7 @@ export class _EventisGrid extends Component {
                                 <h1 className="title">{this.capitalizeBox(box)}<span className="dote"></span></h1>
                             </div>
                             <div className="flip-card-back">
-                                <Link to="/Alexia"><p>See more bio</p></Link>
+                               <p> <Link to="/Alexia">See more bio</Link></p>
                             </div>
 
                             <div className="flip-card-back">

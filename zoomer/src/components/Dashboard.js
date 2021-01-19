@@ -33,7 +33,7 @@ class Dashboard extends Component {
 
                     <input className="searchbar" type="text" placeholder="search"/>
                     <Link to="/">
-                    <SearchIcon fontSize="small"/>
+                    <SearchIcon className="searchbar-icon" fontSize="small"/>
                     </Link>
 
             </div>
@@ -50,19 +50,25 @@ class Dashboard extends Component {
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
+                        <hr width="50%"/>
                         <h2 ><Link to="/">Today's Events</Link></h2>
+                        <hr width="50%"/>
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
+                        <hr width="50%"/>                        
                         <h2><Link to="/">Career</Link></h2>
+                        <hr width="50%"/>                        
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
+                        <hr width="50%"/>                        
                         <h2><Link to="/">Education</Link></h2>
+                        <hr width="50%"/>                        
                     </div>
                 </div>
 
@@ -71,19 +77,25 @@ class Dashboard extends Component {
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
+                        <hr width="50%"/>                        
                         <h2 ><Link to="/">Volunteer</Link></h2>
+                        <hr width="50%"/>                        
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
-                        <h2><Link to="/">Arts & Culture</Link></h2>
+                        <hr width="50%"/>                        
+                        <h2><Link to="/">Arts</Link></h2>
+                        <hr width="50%"/>                        
                     </div>
                 </div>
 
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card host-event">
-                        <h2 ><Link to="/Form">Host an event!</Link></h2>
+                        <hr width="50%"/>                        
+                        <h2 className="event-title" ><Link to="/Form">Host an event!</Link></h2>
+                        <hr width="50%"/>                    
                     </div>
                 </div>
 
