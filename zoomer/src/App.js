@@ -11,16 +11,35 @@ import Form from './components/Form'
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';
 import Christy from './components/Christy';
+import { Component } from 'react';
 
 
 
-function App() {
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+}
+
+callAPI() {
+    fetch("http://localhost:5000/events")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+}
+
+componentWillMount() {
+    this.callAPI();
+}
+
+  render(){
   return (
     <div className="App">
       <header>
         <Header/>
+        
       </header>
-      
+      <p className="App-intro">{this.state.apiResponse}</p>
       <main>
         <Switch>
           <Route exact path="/" component={Landing}/>
@@ -41,6 +60,7 @@ function App() {
       
     </div>
   );
+}
 }
 
 export default App;
