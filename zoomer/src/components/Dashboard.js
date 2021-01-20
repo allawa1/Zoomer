@@ -5,8 +5,15 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 
 import Form from './Form';
+import TodaysEvents from './TodaysEvents';
+import EducationEvents from './EducationEvents'; 
+import VolunteerEvents from './VolunteerEvents'; 
+import ArtEvents from './ArtEvents'; 
+import CareerEvents from './CareerEvents'; 
+
 
 import '../App.css';
+
 
 
 class Dashboard extends Component {
@@ -25,6 +32,7 @@ class Dashboard extends Component {
     //     console.log(data1.Name);
     //     this.setState({name:data1.data.Name})
     // }
+
 
     render(){
     return (
@@ -51,7 +59,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>
-                        <h2 ><Link to="/">Today's Events</Link></h2>
+                        <h2 ><Link to="/TodaysEvents">Today's Events</Link></h2>
                         <hr width="50%"/>
                     </div>
                 </div>
@@ -59,7 +67,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/">Career</Link></h2>
+                        <h2><Link to="/CareerEvents">Career</Link></h2>
                         <hr width="50%"/>                        
                     </div>
                 </div>
@@ -67,7 +75,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/">Education</Link></h2>
+                        <h2><Link to="/EducationEvents">Education</Link></h2>
                         <hr width="50%"/>                        
                     </div>
                 </div>
@@ -78,7 +86,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2 ><Link to="/">Volunteer</Link></h2>
+                        <h2 ><Link to="/VolunteerEvents">Volunteer</Link></h2>
                         <hr width="50%"/>                        
                     </div>
                 </div>
@@ -86,7 +94,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/">Arts</Link></h2>
+                        <h2><Link to="/ArtEvents">Arts</Link></h2>
                         <hr width="50%"/>                        
                     </div>
                 </div>
