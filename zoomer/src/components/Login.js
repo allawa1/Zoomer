@@ -12,10 +12,12 @@ const clientID = '315221332011-2jhmuo70avtsapis9cmn6af4are8qsj6.apps.googleuserc
 class Login extends Component {
     constructor(props) {
         super(props)
-        this.state = {
+        this.state = { isAuthenticated: false, user: null, token: ''
         };
     }
-
+    logout = () => {
+        this.setState({isAuthenticated: false, token: '', user: null})
+    };
         signup(res){
             const googleresponse = {
                 Name: res.profileObj.name,
@@ -25,7 +27,7 @@ class Login extends Component {
                 ProviderId: 'Google'
             };
             
-            axios.post('http://localhost:5000/api/login', 
+            axios.post('http://localhost:5000/users', 
             googleresponse)
                 .then((result)=> {
                     let responseJson = result;
@@ -51,6 +53,7 @@ class Login extends Component {
 
             const responseFacebook = (response) => {
                 console.log(response);
+                //this.signup(response);
             }
             const responseGoogle = (response) => {
                 var res = response.profileObj;
@@ -72,7 +75,6 @@ class Login extends Component {
                     <br />
                     <FacebookLogin
                         appId="386997969259212"
-                        autoLoad={true}
                         fields="name,email,picture"
                         callback={responseFacebook}
                     />
