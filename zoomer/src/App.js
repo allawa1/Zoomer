@@ -7,6 +7,12 @@ import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
 import Form from './components/Form'
+import TodaysEvents from './components/TodaysEvents'
+import EducationEvents from './components/EducationEvents'
+import VolunteerEvents from './components/VolunteerEvents'
+import ArtEvents from './components/ArtEvents'
+import CareerEvents from './components/CareerEvents'
+
 
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';
@@ -22,15 +28,6 @@ class App extends Component {
     this.state = { apiResponse: "" };
 }
 
-callAPI() {
-    fetch("http://localhost:5000/events")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
-}
-
-componentWillMount() {
-    this.callAPI();
-}
 
   render(){
   return (
@@ -39,7 +36,7 @@ componentWillMount() {
         <Header/>
         
       </header>
-      <p className="App-intro">{this.state.apiResponse}</p>
+      
       <main>
         <Switch>
           <Route exact path="/" component={Landing}/>
@@ -47,6 +44,11 @@ componentWillMount() {
           <Route exact path="/Form" component={Form} />                
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
+          <Route exact path="/TodaysEvents" component={TodaysEvents} />           
+          <Route exact path="/EducationEvents" component={EducationEvents} />   
+          <Route exact path="/VolunteerEvents" component={VolunteerEvents} />   
+          <Route exact path="/ArtEvents" component={ArtEvents} />                       
+          <Route exact path="/CareerEvents" component={CareerEvents} />                       
           <Route exact path="/About" component={About} />                        
           <Route exact path="/Alexia" component={Alexia} />                
           <Route exact path="/Daisy" component={Daisy} />                 
