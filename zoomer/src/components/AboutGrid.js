@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { Link,withRouter } from 'react-router-dom';
 
-import Alexia from './Alexia';
-import Daisy from './Daisy'; 
-import Christy from './Christy'; 
 
-
-export class _EventisGrid extends Component {
+export class _AboutGrid extends Component {
 
     state = {
         grid: ['Alexia','Daisy','Christy']
@@ -56,4 +52,4 @@ export class _EventisGrid extends Component {
     }
 }
 
-export const EventisGrid = withRouter(_EventisGrid)
+export const AboutGrid = withRouter(_AboutGrid)
