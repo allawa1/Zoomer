@@ -27,7 +27,7 @@ class Login extends Component {
                 ProviderId: 'Google'
             };
             
-            axios.post('http://localhost:5000/users', 
+            axios.post(process.env.REACT_APP_DOMAIN, '/users', 
             googleresponse)
                 .then((result)=> {
                     sessionStorage.setItem("userData", JSON.stringify(result))
