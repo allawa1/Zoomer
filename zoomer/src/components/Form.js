@@ -15,10 +15,11 @@ const Form = () => {
             <h2>Host your own event</h2>
             <h3>Fill out this form to get started</h3>
 
-            <form action=""
+            <form action="http://localhost:3000/events"
             method="POST"
             enctype="multipart/form-data"
             name="PostForm">
+                <fieldset> 
                 <div className="fields">
                 Event Name:<br/>
                 <input type="text" size="30" name="EventName" id="EventName"/><br/>
@@ -40,8 +41,9 @@ const Form = () => {
                 </textarea><br/><br/> 
 
                 <button type="submit" value="Submit" className="register-btn" >Register</button>
-                </div>
 
+                </div>
+                </fieldset> 
             </form>
         </div>
     )
