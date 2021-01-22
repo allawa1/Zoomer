@@ -1,22 +1,17 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
-import Logout from './Logout'
 
-
-
-import Dashboard from './Dashboard';
 
 const Alexia = () => {
     return (
 
-        <div class="container">
+        <div className="container">
             <p>About Alexia</p>
-            <img src=""></img>
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
+            <img src="" alt=""></img>
+            <h2>Hi, My name is Alexia Allaway</h2>
+            <p className="title">CEO & Founder</p>
+            <p>I love working and hosting virtual events</p>
+            <p>alexiaallaway@gmail.com</p>
+            <p><button className="button">Contact</button></p>
         </div>
     )
 

@@ -3,8 +3,8 @@ import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import axios from 'axios'
 import '../App.css';
-import { refreshTokenSetup } from '../utils/refreshToken'
-import Logout from './Logout';
+// import { refreshTokenSetup } from '../utils/refreshToken'
+// import Logout from './Logout';
 
 
 const clientID = '315221332011-2jhmuo70avtsapis9cmn6af4are8qsj6.apps.googleusercontent.com'
@@ -30,9 +30,7 @@ class Login extends Component {
             axios.post('http://localhost:5000/users', 
             googleresponse)
                 .then((result)=> {
-                    let responseJson = result;
                     sessionStorage.setItem("userData", JSON.stringify(result))
-                    this.props.history.push('/Dashboard')
                 });
             
         }
