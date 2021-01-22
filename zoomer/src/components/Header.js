@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-import Logout from './Logout'
 
-
-import Dashboard from './Dashboard';
 import Login from './Login';
-
-import profile from '../assets/images/profile.png';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 import '../App.css';
