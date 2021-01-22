@@ -30,11 +30,20 @@ class App extends Component {
 
 
   render(){
+
+
+
   return (
     <div className="App">
       <header>
         <Header/>
-        
+          
+          <div>
+            <small>You are running this application in <b>{process.env.NODE_ENV}</b></small>
+            
+          </div>
+     
+     
       </header>
       
       <main>
