@@ -13,7 +13,7 @@ class EducationEvents extends Component {
     }
 
     callAPI() {
-    fetch("http://localhost:5000/events")
+    fetch(process.env.REACT_APP_DOMAIN + "/education")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }

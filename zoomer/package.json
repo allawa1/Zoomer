@@ -2,6 +2,7 @@
   "name": "zoomer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sleepy-bastion-34857.herokuapp.com",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -16,8 +17,7 @@
     "react-google-login": "^5.2.2",
     "react-native-elements": "^3.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

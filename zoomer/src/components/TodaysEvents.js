@@ -11,7 +11,9 @@ class TodaysEvents extends Component {
     }
 
     callAPI() {
-    fetch("http://localhost:5000/events")
+
+        console.log(process.env.REACT_APP_DOMAIN)
+    fetch(process.env.REACT_APP_DOMAIN + "/events") 
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }
