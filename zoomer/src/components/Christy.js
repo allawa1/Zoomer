@@ -6,10 +6,11 @@ const Christy = () => {
         <div class="container">
             <p>About Christy</p>
             <img src="" alt=""></img>
-            <h2>Jane Doe</h2>
+            <h2>Christy Phommasak</h2>
             <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <p>Software Enthusiast on a journey of influencing positive habits 
+                <br />and making personal and professional growth more virtually accessible. </p>
+            <p>christy@zoomer.com</p>
             <p><button class="button">Contact</button></p>
         </div>
     )

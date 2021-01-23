@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 
 // import Form from './Form';
-// import TodaysEvents from './TodaysEvents';
+//import TodaysEvents from './TodaysEvents';
 // import EducationEvents from './EducationEvents'; 
 // import VolunteerEvents from './VolunteerEvents'; 
 // import ArtEvents from './ArtEvents'; 
@@ -43,9 +43,8 @@ class Dashboard extends Component {
 
                 <section className="sub-nav">
                     <ul>
-                        <li><Link to={'/all'}>All events</Link></li>
-                        <li><Link to={'/yours'}>Your events</Link></li>
-                        <li><Link to={'/today'}>Today</Link></li>
+                        <li><Link to={'/events'}>All events</Link></li>
+
                     </ul>
                 </section>
 
@@ -54,7 +53,7 @@ class Dashboard extends Component {
                 <div className="column" onclick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>
-                        <h2 ><Link to="/TodaysEvents">Today's Events</Link></h2>
+                        <h2 ><Link to={"/TodaysEvents"}>Today's Events</Link></h2>
                         <hr width="50%"/>
                     </div>
                 </div>

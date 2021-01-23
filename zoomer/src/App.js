@@ -7,12 +7,14 @@ import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
 import Form from './components/Form'
+import AllEvents from './components/AllEvents'
 import TodaysEvents from './components/TodaysEvents'
 import EducationEvents from './components/EducationEvents'
 import VolunteerEvents from './components/VolunteerEvents'
 import ArtEvents from './components/ArtEvents'
 import CareerEvents from './components/CareerEvents'
 
+import Axios from 'axios'
 
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';
@@ -29,6 +31,7 @@ class App extends Component {
 }
 
 
+
   render(){
 
 
@@ -37,7 +40,6 @@ class App extends Component {
     <div className="App">
       <header>
         <Header/>
-
       </header>
       
       <main>
@@ -47,6 +49,7 @@ class App extends Component {
           <Route exact path="/Form" component={Form} />                
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
+          <Route exact path="/AllEvents" component={AllEvents} />     
           <Route exact path="/TodaysEvents" component={TodaysEvents} />           
           <Route exact path="/EducationEvents" component={EducationEvents} />   
           <Route exact path="/VolunteerEvents" component={VolunteerEvents} />   

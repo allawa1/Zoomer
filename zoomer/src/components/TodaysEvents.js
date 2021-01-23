@@ -13,7 +13,7 @@ class TodaysEvents extends Component {
     callAPI() {
 
         console.log(process.env.REACT_APP_DOMAIN)
-    fetch(process.env.REACT_APP_DOMAIN + "/events") 
+    fetch(process.env.REACT_APP_DOMAIN + "/events/today") 
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }
