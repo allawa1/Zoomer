@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
 import '../App.css';
 
-class ArtEvents extends Component {
+
+class AllEvents extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -11,8 +11,9 @@ class ArtEvents extends Component {
     }
 
     callAPI() {
-                console.log(process.env.REACT_APP_DOMAIN)
-    fetch(process.env.REACT_APP_DOMAIN + "/events/art")
+
+        console.log(process.env.REACT_APP_DOMAIN)
+    fetch(process.env.REACT_APP_DOMAIN + "/events") 
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }
@@ -32,4 +33,4 @@ class ArtEvents extends Component {
     }
 }
 
-export default ArtEvents
+export default AllEvents

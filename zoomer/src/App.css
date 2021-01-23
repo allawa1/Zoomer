@@ -27,10 +27,10 @@
   background-size: 100% 200%;
   background-position: center center;
   background-color: rgb(173, 235, 235);
-  min-height: 50vh;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(11px + 2vmin);
+  font-size: calc(16px + 2vmin);
   padding: 4%;
 
 }
@@ -123,9 +123,6 @@ li .loginProfile {
 }
 
 
-.App-navbar-icon {
-
-}
 
 /* ----------- SEARCH ------------- */
 .searchbar {
@@ -185,7 +182,7 @@ input {
   box-shadow: 2px 4px 4px 6px rgba(0, 0, 0, 0.2);
   padding: 15%;
   text-align: center;
-  background-color: rgb(0, 77, 77);
+  background-color: rgb( 184, 233, 236);
   min-width: 50px;
   display: grid;
   border-radius: 3%;
@@ -194,11 +191,12 @@ input {
 } 
 
  .card a {
-   color: white;
+   color:  rgb(85, 91, 91);
+   ;
  }
 
  .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 
  }
 
@@ -211,6 +209,19 @@ input {
 .host-event a {
     color: black;
 }
+
+.EventsCard {
+  border: solid;
+  display: inline-block;
+  justify-content: row;
+  padding: 2% 5%;
+  margin: 3%;
+  width: 20%;
+  height: 10%;
+
+}
+
+
 
 form {
   display: block;
@@ -254,7 +265,7 @@ input {
 
 hr {
   width: 80%;
-  color: beige;
+  color: silver;
 }
 
 
