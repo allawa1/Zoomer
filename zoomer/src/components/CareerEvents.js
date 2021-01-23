@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+
 
 import '../App.css';
 
@@ -30,12 +35,25 @@ class CareerEvents extends Component {
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
+                    
                     <h3>Event ID: </h3>
                     <p>{item.eventID}</p>
+
                     <h3>Event Title: </h3>
                     <p>{item.title}</p>
+
                     <h3>Event Description: </h3>                    
-                    <p>{item.description}</p>                    
+                    <p>{item.description}</p> 
+
+                   <span class="stackIcons">
+                        <div className="favoriteBorder">
+                            <Link to="#"> <FavoriteBorderIcon className="favoriteBorderActive" /> </Link>
+                            <Link to="#"> <FavoriteIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                        </div>
+                    </span>
+
+
+
                 </div>)}
                 </div>
             </div>
