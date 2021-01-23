@@ -89,7 +89,7 @@ class Dashboard extends Component {
                 <div className="column" onClick="openTab('b1')" >
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/ArtEvents">Arts</Link></h2>
+                        <h2><Link to="/events/art">Arts</Link></h2>
                         <hr width="50%"/>                        
                     </div>
                 </div>

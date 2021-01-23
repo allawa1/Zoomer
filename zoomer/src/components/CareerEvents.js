@@ -11,7 +11,7 @@ class CareerEvents extends Component {
     }
 
     callAPI() {
-    fetch(process.env.REACT_APP_DOMAIN + "/career")
+    fetch(process.env.REACT_APP_DOMAIN + "/events/career")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }

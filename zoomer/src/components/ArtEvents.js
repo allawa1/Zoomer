@@ -11,7 +11,8 @@ class ArtEvents extends Component {
     }
 
     callAPI() {
-    fetch(process.env.REACT_APP_DOMAIN + "/art")
+                console.log(process.env.REACT_APP_DOMAIN)
+    fetch(process.env.REACT_APP_DOMAIN + "/events/art")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }

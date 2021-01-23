@@ -13,6 +13,7 @@ import VolunteerEvents from './components/VolunteerEvents'
 import ArtEvents from './components/ArtEvents'
 import CareerEvents from './components/CareerEvents'
 
+import Axios from 'axios'
 
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';
@@ -27,6 +28,7 @@ class App extends Component {
     super(props);
     this.state = { apiResponse: "" };
 }
+
 
 
   render(){
@@ -56,7 +58,7 @@ class App extends Component {
           <Route exact path="/TodaysEvents" component={TodaysEvents} />           
           <Route exact path="/EducationEvents" component={EducationEvents} />   
           <Route exact path="/VolunteerEvents" component={VolunteerEvents} />   
-          <Route exact path="/ArtEvents" component={ArtEvents} />                       
+          <Route exact path="/events/art" component={ArtEvents} />                       
           <Route exact path="/CareerEvents" component={CareerEvents} />                       
           <Route exact path="/About" component={About} />                        
           <Route exact path="/Alexia" component={Alexia} />                
