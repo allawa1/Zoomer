@@ -51,7 +51,7 @@ class Dashboard extends Component {
 
 
             <div className="row" >
-                <div className="column" onclick="openTab('b1')" >
+                <div className="column" >
                     <div className="card">
                         <hr width="50%"/>
                         <h2 ><Link to="/TodaysEvents">Today's Events</Link></h2>
@@ -59,7 +59,7 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <div className="card">
                         <hr width="50%"/>                        
                         <h2><Link to="/CareerEvents">Career</Link></h2>
@@ -67,7 +67,7 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column">
                     <div className="card">
                         <hr width="50%"/>                        
                         <h2><Link to="/EducationEvents">Education</Link></h2>
@@ -78,7 +78,7 @@ class Dashboard extends Component {
             </div>
 
             <div className="row" >
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <div className="card">
                         <hr width="50%"/>                        
                         <h2 ><Link to="/VolunteerEvents">Volunteer</Link></h2>
@@ -86,7 +86,7 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <div className="card">
                         <hr width="50%"/>                        
                         <h2><Link to="/ArtEvents">Arts</Link></h2>
@@ -94,7 +94,7 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <div className="card host-event">
                         <hr width="50%"/>                        
                         <h2 className="event-title" ><Link to="/Form">Host an event!</Link></h2>
