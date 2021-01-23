@@ -6,14 +6,14 @@ class CareerEvents extends Component {
     constructor(props) {
         super(props)
         this.state = {
-        name:'',
+            results: [],
         };
     }
 
     callAPI() {
-    fetch(process.env.REACT_APP_DOMAIN + "/career")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+        fetch(process.env.REACT_APP_DOMAIN + "/events/career")
+            .then(res => res.json())
+            .then(res => this.setState({ results: res }));
     }
 
     componentWillMount() {
@@ -21,9 +21,16 @@ class CareerEvents extends Component {
     }
 
     render() {
-        return(
 
-        <p className="App-intro">{this.state.apiResponse}</p>
+        return (
+
+            <div>
+                {this.state.results.map((item, i) => 
+                <div key={i}>
+                    <p>{item.eventID}</p>
+                    <p>{item.title}</p>
+                </div>)}
+            </div>
 
 
 
