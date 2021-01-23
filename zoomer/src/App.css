@@ -1,4 +1,5 @@
 body, html {
+  display: grid;
   height: 100%;
   width: 100%;
   font-family: "Roboto";
@@ -32,7 +33,7 @@ body, html {
   background-size: 100% 200%;
   background-position: center center;
   background-color: rgb(173, 235, 235);
-  min-height: 30vh;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
   font-size: calc(14px + 2vmin);
@@ -216,14 +217,20 @@ input {
 
 .EventsCard {
   border: solid;
+  border-radius: 3%;
   display: inline-block;
   justify-content: row;
-  padding: 2% 5%;
-  margin: 3%;
+  padding: 2% 3%;
+  margin: 2%;
   width: 30%;
   height: 10%;
 
 }
+
+.EventsCard:hover {
+
+}
+
 
 .favoriteBorder {
   float: right;
@@ -236,9 +243,12 @@ input {
 
 .favoriteBorder > a:hover {
   color: rgb(212, 230, 241);
+
 }
 
 
+
+/* ----------- FORM ------------- */
 form {
   display: inline-block;
   margin-top: 5%;
@@ -291,12 +301,14 @@ hr {
 /* ----------- FOOTER ------------- */
 
 .footer {
-  margin-top: 8%;
+  margin-top: 3%;
+  padding-top: 2%;
   position: absolute;
   width: 100%;
   font-family: "Roboto";
   background-color: rgb( 242, 243, 244);
   color:  rgb(0, 77, 77); 
+  font-size: small;
 }
 
 .Credits a {
