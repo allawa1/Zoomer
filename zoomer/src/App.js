@@ -37,13 +37,7 @@ class App extends Component {
     <div className="App">
       <header>
         <Header/>
-          
-          <div>
-            <small>You are running this application in <b>{process.env.NODE_ENV}</b></small>
-            
-          </div>
-     
-     
+
       </header>
       
       <main>
