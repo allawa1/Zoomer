@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
 import Form from './components/Form'
+import AllEvents from './components/AllEvents'
 import TodaysEvents from './components/TodaysEvents'
 import EducationEvents from './components/EducationEvents'
 import VolunteerEvents from './components/VolunteerEvents'
@@ -40,11 +41,7 @@ class App extends Component {
       <header>
         <Header/>
           
-          <div>
-            <small>You are running this application in <b>{process.env.NODE_ENV}</b></small>
-            
-          </div>
-     
+
      
       </header>
       
@@ -55,10 +52,11 @@ class App extends Component {
           <Route exact path="/Form" component={Form} />                
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
+          <Route exact path="/AllEvents" component={AllEvents} />     
           <Route exact path="/TodaysEvents" component={TodaysEvents} />           
           <Route exact path="/EducationEvents" component={EducationEvents} />   
           <Route exact path="/VolunteerEvents" component={VolunteerEvents} />   
-          <Route exact path="/events/art" component={ArtEvents} />                       
+          <Route exact path="/ArtEvents" component={ArtEvents} />                       
           <Route exact path="/CareerEvents" component={CareerEvents} />                       
           <Route exact path="/About" component={About} />                        
           <Route exact path="/Alexia" component={Alexia} />                
