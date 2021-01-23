@@ -210,6 +210,19 @@ input {
     color: black;
 }
 
+.EventsCard {
+  border: solid;
+  display: inline-block;
+  justify-content: row;
+  padding: 2% 5%;
+  margin: 3%;
+  width: 20%;
+  height: 10%;
+
+}
+
+
+
 form {
   display: block;
   align-items: right;

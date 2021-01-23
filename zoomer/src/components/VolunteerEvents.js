@@ -11,9 +11,11 @@ class Volunteer extends Component {
     }
 
     callAPI() {
-    fetch(process.env.REACT_APP_DOMAIN + "/events/volunteer")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+
+        fetch(process.env.REACT_APP_DOMAIN + "/events/volunteer")
+            .then(res => res.json())
+            .then(res => this.setState({ results: res }));
+
     }
 
     componentWillMount() {

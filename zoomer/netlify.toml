@@ -1,0 +1,8 @@
+[build]
+    base = ""
+    publish = "build"
+    command = "npm build"
+
+[[redirects]]
+    from = "/*"
+    to 
