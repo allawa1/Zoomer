@@ -62,6 +62,9 @@ class CareerEvents extends Component {
                                  
                     <p>{item.description}</p>         
 
+                    <h4>Date: </h4>
+                    <p>{item.date}</p>
+                    
                     <h4>Event ID: </h4>
                     <p>{item.eventID}</p>
 

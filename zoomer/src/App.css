@@ -162,8 +162,8 @@ input {
 
 
 .active, .btn:hover {
-  background-color: rgb(209, 242, 235 );
-  color: rgb(0, 77, 77);
+  background-color: rgb(  207, 234, 228 );
+
 }
 
 .btn a {
@@ -211,10 +211,9 @@ input {
 
  .card {
   box-shadow: 2px 4px 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 15%;
+  padding: 10%;
   text-align: center;
-  background-color: rgb(209, 242, 235 );
-  min-width: 50px;
+  background-color:  rgb(209, 242, 235 );
   display: grid;
   border-radius: 3%;
   grid-gap: 5px;
@@ -243,11 +242,13 @@ input {
   justify-content: row;
   padding: 2% 3%;
   margin: 2%;
-  width: 30%;
-  height: 10%;
-
+  width: 25%;
 }
 
+.EventsCard:hover {
+  box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.2);
+  border-color: silver;
+}
 
 
 .favoriteBorder {
@@ -260,7 +261,7 @@ input {
 }
 
 .favoriteBorder > a:hover {
-  color: rgb(212, 230, 241);
+  color: rgb( 255, 194, 13);
 
 }
 
@@ -351,7 +352,7 @@ hr {
 .sub-nav ul {
   display: flex;
   justify-content: space-evenly;
-  color: rgb(0, 77, 77);
+  color: black;
 }
 .sub-nav li {
   transition: background-color 0.3s;
@@ -363,7 +364,7 @@ hr {
   align-items: center;
 }
 .sub-nav a {
-  color: rgb(0, 77, 77);
+  color: black;
 }
 
 .sub-nav a:hover {
