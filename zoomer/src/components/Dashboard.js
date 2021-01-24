@@ -45,7 +45,7 @@ class Dashboard extends Component {
 
                 <section className="sub-nav">
                     <ul>
-                        <li><Link to={'/YourEvents'}>Your events</Link></li>
+                        <li><Link to={'/YourEvents'}><h2>Your Events</h2></Link></li>
 
                     </ul>
                 </section>
@@ -53,54 +53,66 @@ class Dashboard extends Component {
 
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
+                    <Link to={"/all"}>
                     <div className="card">
                         <hr width="50%"/>
-                        <h2 ><Link to={"/all"}>All Events</Link></h2>
+                        <h2 >All Events</h2>
                         <hr width="50%"/>
                     </div>
+                    </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
+                    <Link to="/CareerEvents">
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/CareerEvents">Career</Link></h2>
+                        <h2>Career</h2>
                         <hr width="50%"/>                        
                     </div>
+                    </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
+                    <Link to="/EducationEvents">
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/EducationEvents">Education</Link></h2>
-                        <hr width="50%"/>                        
+                        <h2>Education</h2>
+                        <hr width="50%"/>               
                     </div>
+                    </Link>                             
                 </div>
 
             </div>
 
             <div className="row" >
                 <div className="column" onClick="openTab('b1')" >
+                    <Link to="/VolunteerEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2 ><Link to="/VolunteerEvents">Volunteer</Link></h2>
+                        <h2 >Volunteer</h2>
                         <hr width="50%"/>                        
                     </div>
+                    </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
+                    <Link to="/ArtEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2><Link to="/ArtEvents">Arts</Link></h2>
+                        <h2>Arts</h2>
                         <hr width="50%"/>                        
                     </div>
+                    </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
+                    <Link to="/Form">
                     <div className="card host-event">
                         <hr width="50%"/>                        
-                        <h2 className="event-title" ><Link to="/Form">Host an event!</Link></h2>
+                        <h2 className="event-title" >Host an event!</h2>
                         <hr width="50%"/>                    
                     </div>
+                    </Link>
                 </div>
 
 

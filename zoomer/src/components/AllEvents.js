@@ -28,6 +28,13 @@ class AllEvents extends Component {
         this.callAPI();
     }
 
+
+    handleClick = () => {
+        this.setState({
+            bgImg: 'red'
+        })
+    }
+
     render() {
         return(
 
@@ -35,7 +42,7 @@ class AllEvents extends Component {
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
-                    
+                    <h2>All Events</h2>
                     <h3>Event ID: </h3>
                     <p>{item.eventID}</p>
 
@@ -46,9 +53,12 @@ class AllEvents extends Component {
                     <p>{item.description}</p> 
 
                    <span class="stackIcons">
-                        <div className="favoriteBorder">
-                            <Link to="#"> <FavoriteBorderIcon className="favoriteBorderActive" /> </Link>
-                            <Link to="#"> <FavoriteIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                          <div className="favoriteBorder">
+                            
+                            <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
+                            onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
+
+                            <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
                         </div>
                     </span>
 

@@ -40,6 +40,7 @@ class Volunteer extends Component {
         return(
 
            <div className="container">
+                <h2>Volunteer</h2>                
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
