@@ -46,6 +46,7 @@ class Dashboard extends Component {
                 <section className="sub-nav">
                     <ul>
                         <li><Link to={'/YourEvents'}><h2>Your Events</h2></Link></li>
+                        <li><Link to={'/TodaysEvents'}><h2>Today's Events</h2></Link></li>
 
                     </ul>
                 </section>
@@ -53,7 +54,7 @@ class Dashboard extends Component {
 
             <div className="row" >
                 <div className="column" onclick="openTab('b1')" >
-                    <Link to={"/all"}>
+                    <Link to={"/AllEvents"}>
                     <div className="card">
                         <hr width="50%"/>
                         <h2 >All Events</h2>

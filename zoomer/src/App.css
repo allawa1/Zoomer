@@ -150,7 +150,28 @@ input {
   background-color: rgb(173, 235, 235);
 }
 
+.btn {
+  font-family: "Roboto";
+  padding: .6%;
+  margin: 1%;
+  width: 12.5%;
+  font-size: medium;
+  border-radius: 999px;
+  background-color: white;
+}
 
+
+.active, .btn:hover {
+  background-color: rgb(209, 242, 235 );
+}
+
+.btn a {
+  color: black;
+}
+
+.EventHeader {
+  margin: 5%;
+}
 
 /* ----------- DASHBOARD ------------- */
 

@@ -39,7 +39,21 @@ class CareerEvents extends Component {
         return (
 
             <div className="container">
-                <h2>Career</h2>                
+
+                <div id="eventButtons">
+                    <button className="btn"><Link to="/AllEvents">All Events</Link></button>                    
+                    <button className="btn active"><Link to="/CareerEvents">Career</Link></button>
+                    <button className="btn"><Link to="/EducationEvents">Education</Link></button>
+                    <button className="btn"><Link to="/VolunteerEvents">Volunteer</Link></button>
+                    <button className="btn"><Link to="/ArtEvents">Art</Link></button>
+                    <br />                    
+                    <button className="btn"><Link to="/YourEvents">Your Events</Link></button>
+                    <button className="btn"><Link to="/TodaysEvents">Today's Events</Link></button>                                   
+                </div> 
+
+
+                <h2 className="EventHeader">Career</h2>       
+                         
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
