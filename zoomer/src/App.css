@@ -242,7 +242,9 @@ input {
   justify-content: row;
   padding: 2% 3%;
   margin: 2%;
-  width: 25%;
+  width: 30%;
+  height: 400px;
+  overflow: hidden;
 }
 
 .EventsCard:hover {
@@ -250,17 +252,22 @@ input {
   border-color: silver;
 }
 
+.EventsCardContent {
+  padding-top: 10%;
+}
 
 .favoriteBorder {
-  float: right;
+  float: left;
 
 }
+
+
   
 .favoriteBorder > a {
   color: black;
 }
 
-.favoriteBorder > a:hover {
+.favoriteBorder a:hover {
   color: rgb( 255, 194, 13);
 
 }
