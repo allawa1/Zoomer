@@ -64,20 +64,20 @@ class Dashboard extends Component {
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
-                    <Link to="/CareerEvents">
+                    <Link to="/ArtEvents">
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2>Career</h2>
+                        <h2>Art</h2>
                         <hr width="50%"/>                        
                     </div>
                     </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
-                    <Link to="/EducationEvents">
+                    <Link to="/CareerEvents">
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2>Education</h2>
+                        <h2>Career</h2>
                         <hr width="50%"/>               
                     </div>
                     </Link>                             
@@ -87,20 +87,20 @@ class Dashboard extends Component {
 
             <div className="row" >
                 <div className="column" onClick="openTab('b1')" >
-                    <Link to="/VolunteerEvents">                    
+                    <Link to="/EducationEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2 >Volunteer</h2>
+                        <h2 >Education</h2>
                         <hr width="50%"/>                        
                     </div>
                     </Link>
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
-                    <Link to="/ArtEvents">                    
+                    <Link to="/VolunteerEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
-                        <h2>Arts</h2>
+                        <h2>Volunteer</h2>
                         <hr width="50%"/>                        
                     </div>
                     </Link>

@@ -62,7 +62,7 @@ body, html {
   list-style-type: none;
   font-family: "Capriola";
   padding: 30px;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
 }
 
 
@@ -92,7 +92,7 @@ body, html {
 .dropdown:hover .dropdown-content {
   margin: 5%;
   display: block;
-  padding: 2%;
+  padding: 3%;
 
 
 }
@@ -126,7 +126,7 @@ li .loginProfile {
 }
 
 .login {
-  margin-top: 5%;
+  margin: 5%;
 
 }
 
@@ -151,10 +151,10 @@ input {
 }
 
 .btn {
-  font-family: "Roboto";
-  padding: .6%;
+  font-family: "Telex";
+  padding: .5%;
   margin: 1%;
-  width: 12.5%;
+  width: 13%;
   font-size: medium;
   border-radius: 999px;
   background-color: white;
@@ -163,6 +163,7 @@ input {
 
 .active, .btn:hover {
   background-color: rgb(209, 242, 235 );
+  color: rgb(0, 77, 77);
 }
 
 .btn a {
@@ -170,7 +171,7 @@ input {
 }
 
 .EventHeader {
-  margin: 5%;
+  margin: 3%;
 }
 
 /* ----------- DASHBOARD ------------- */
