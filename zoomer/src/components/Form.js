@@ -51,10 +51,10 @@ class Form extends Component {
 
     render() {
         return (
-            <div>
+            <div className="host-form-div">
                 <form onSubmit={this.submitForm}>
                     <div className="fields">
-                        <label htmlFor="eventID">EventID</label>
+                        <label htmlFor="eventID" >EventID: </label>
                         <input
                             type="text"
                             name="eventID"
@@ -66,7 +66,7 @@ class Form extends Component {
                         />
                     </div>
                     <div className="fields">
-                        <label htmlFor="title">Event Title</label>
+                        <label htmlFor="title">Event Title: </label>
                         <input
                             type="text"
                             name="title"
@@ -78,19 +78,7 @@ class Form extends Component {
                         />
                     </div>
                     <div className="fields">
-                        <label htmlFor="description">Event Description</label>
-                        <input
-                            type='text'
-                            name="description"
-                            id="description"
-                            value={this.state.values.description}
-                            onChange={this.handleInputChange}
-                            title="description"
-                            required
-                        />
-                    </div>
-                    <div className="fields">
-                        <label htmlFor="date">Event Date</label>
+                        <label htmlFor="date">Event Date: </label>
                         <input
                             type="date"
                             name="date"
@@ -102,7 +90,7 @@ class Form extends Component {
                         />
                     </div>
                     <div className="fields">
-                        <label htmlFor="location">Event Location</label>
+                        <label htmlFor="location">Event Location: </label>
                         <input
                             type="text"
                             name="location"
@@ -114,7 +102,7 @@ class Form extends Component {
                         />
                     </div>
                     <div className="fields">
-                        <label htmlFor="tag">Event Tag</label>
+                        <label htmlFor="tag">Event Tag:</label>
                         <select name= 'tag' value={this.state.values.tag} onChange={this.handleInputChange}>
                             <option value="Art">Art</option>
                             <option value="Career">Career</option>
@@ -122,7 +110,22 @@ class Form extends Component {
                             <option value="Education">Education</option>
                         </select>
                     </div>
-                    <button type="submit" >Submit</button>
+                    <div className="fields">
+                        <label htmlFor="description" >Event Description: </label>
+                        <input className="textarea"
+                            type='text'
+                            name="description"
+                            id="description"
+                            value={this.state.values.description}
+                            onChange={this.handleInputChange}
+                            title="description"
+                            required
+                        />
+
+                    </div>    
+                    <div className="fields">                                    
+                    <button type="submit" className="register-btn">Register</button>
+                    </div>
                 </form>
             </div>
         )

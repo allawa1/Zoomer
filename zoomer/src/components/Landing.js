@@ -7,7 +7,7 @@ import '../App.css';
 const Landing = () => {
     return (
         <div className="Landing">
-            <h4>Popular Events</h4>
+            <h2>Popular Events</h2>
         </div>
     )
 }

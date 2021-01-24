@@ -11,9 +11,9 @@ const Footer = () => {
     return (
         <div className="footer">
 
-            <h4 className="Credits"><Link to="/Credits">Credits</Link></h4>
-             <h4>All rights reserved</h4>
-            <h4><img src={copywright} alt="copywright" height="12px" width="13px"/> ZOOMER INC.</h4>    
+            <p className="Credits"><Link to="/Credits">Credits</Link></p>
+             <p>All rights reserved</p>
+            <p><img src={copywright} alt="copywright" height="12px" width="13px"/><b> ZOOMER</b></p>    
             
         </div>
     )
