@@ -19,8 +19,8 @@ class EducationEvents extends Component {
 
     callAPI() {
     fetch(process.env.REACT_APP_DOMAIN + "/events/education")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+        .then(res => res.json())
+        .then(res => this.setState({ results: res }));
     }
 
     componentWillMount() {
@@ -54,27 +54,32 @@ class EducationEvents extends Component {
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
-                    
+
+                    <div className="favoriteBorder">
+                        
+                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
+
+                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                    </div>
+
+                   <div className="EventsCardContent">
                     <h2>{item.title}</h2>
-                                 
+
+ 
                     <p>{item.description}</p>         
+
 
                     <h4>Date: </h4>
                     <p>{item.date}</p>
-                    
+
                     <h4>Event ID: </h4>
                     <p>{item.eventID}</p>
+                 </div>
 
-                   <span class="stackIcons">
-                        <div className="favoriteBorder">
-                            
-                            <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                            onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
 
-                            <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
-                        </div>
-                    </span>
 
+   
                 </div>)}
                 </div>
             </div>
