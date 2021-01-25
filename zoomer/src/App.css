@@ -25,7 +25,7 @@ body, html {
   background-image: url("./assets/images/sunrise.jpg");
   background-repeat: no-repeat;
   background-size: 100% 200%;
-  background-position: center center;
+  background-position: top center;
   background-color: rgb(173, 235, 235);
   min-height: 50vh;
   align-items: center;
@@ -142,7 +142,7 @@ input {
 
 
 .active, .btn:hover {
-  background-color: rgb(  207, 234, 228 );
+  background-color: RGB(240, 235, 234);
 
 }
 
@@ -157,7 +157,7 @@ input {
 
 /* ----------- LANDING ------------- */
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 100px) {
   .Discover-img, .Join-img {
   width: 100%;
   }
@@ -172,10 +172,9 @@ input {
 
 
 .Landing-div {
-  min-height: 575px;
-  max-width: 100%;
+  min-height: 480px;
+  max-width: 90%;
   margin: 6%;
-  border: 3px solid #E18728;
   border-radius: 10px;
   background-color: white;
 }
@@ -189,8 +188,10 @@ input {
 .Landing-description{
   display: block;  
   text-align: center;
-  padding-top: 5% ;
-  font-family: "Capriola";  
+  padding-top: 1% ;
+  padding-right: 5%;  
+  padding-left: 5%;    
+  font-family: "Roboto";  
   font-size: 16pt;
 
 }
@@ -206,6 +207,8 @@ input {
   float: left;
   border-radius: 50%;
   margin-left: 10%;
+  margin-right: 5%;  
+
 }
 
 .Refresh-img, .Host-img{
@@ -219,6 +222,7 @@ input {
   border-radius: 50%;
   z-index: 3;
   margin-right: 10%;
+  margin-left: 5%;    
 }
 
 .Discover-img:hover .Refresh-img:hover .Join-img:hover .Host-img:hover{
@@ -230,16 +234,34 @@ input {
 
 }
 
+.Discover-img {
+  background-image: url('../src/assets/images/discover.jpg')
+}
+
+.Refresh-img {
+  background-image: url('../src/assets/images/refresh.jpg')
+}
+
+.Join-img {
+  background-image: url('../src/assets/images/join.jpg')
+}
+
+.Host-img {
+  background-image: url('../src/assets/images/host.jpg')
+}
 
 .Landing-description > a {
-  color: black;
+  color: rgb( 255, 194, 13);;
 }
 
-.Landing-description > a:hover {
-  color: rgb( 255, 194, 13);
+.Landing-register > a {
+  font-family: "Bowlby One";
+  font-size:20pt;
 }
 
-
+.prev > a {
+background-color:'red'
+}
 
 /* ----------- DASHBOARD ------------- */
 
@@ -333,16 +355,14 @@ input {
 
 }
 
-
+.favoriteBorderActive:hover {
+  color: rgb( 255, 194, 13);
+}
   
 .favoriteBorder > a {
   color: black;
 }
 
-.favoriteBorder a:hover {
-  color: rgb( 255, 194, 13);
-
-}
 
 
 

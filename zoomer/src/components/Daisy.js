@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Daisy = () => {
     return (
 
@@ -9,7 +10,7 @@ const Daisy = () => {
             <img src="" alt=""></img>
             <h2>Daisy</h2>
             <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>Join virtual events through Zoomer. Browse events to get started.</p>
             <p>daisy@zoomer.com</p>
             <p><button class="button">Contact</button></p>
             </form>

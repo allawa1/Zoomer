@@ -53,7 +53,7 @@ class TodaysEvents extends Component {
                     <button className="btn active"><Link to="/TodaysEvents">Today's Events</Link></button>                                    
                 </div> 
                
-                <h2 className="EventHeader">Today's Events</h2>                
+                <h2 className="EventHeader">Current Events</h2>                
                 
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
@@ -61,10 +61,7 @@ class TodaysEvents extends Component {
 
                     <div className="favoriteBorder">
                         
-                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
-
-                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                         <FavoriteIcon className="favoriteBorderActive"  /> 
                     </div>
 
                    <div className="EventsCardContent">
