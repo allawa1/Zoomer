@@ -9,7 +9,7 @@ const Christy = () => {
             <img src="" alt=""></img>
             <h2>Christy Phommasak</h2>
             <p class="title">CEO & Founder</p>
-            <p>Software Enthusiast on a journey to make personal goals and professional development more accessible. </p>
+            <p>Software Enthusiast on a journey to help enhance the quality of your personal goals and professional development. </p>
             <p>christy@zoomer.com</p>
             <p><button class="button" >Contact</button></p>
             </form>

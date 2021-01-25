@@ -54,10 +54,7 @@ class ArtEvents extends Component {
  
                     <div className="favoriteBorder">
                         
-                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
-
-                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                         <FavoriteIcon className="favoriteBorderActive"  /> 
                     </div>
 
                    <div className="EventsCardContent">

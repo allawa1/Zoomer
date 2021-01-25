@@ -36,17 +36,17 @@ class Dashboard extends Component {
         <div className="dashboard-div">
             <div className="dashboard-header">
 
-                    <input className="searchbar" type="text" placeholder="search events..."/>
+{/*                     <input className="searchbar" type="text" placeholder="search events..."/>
                     <Link to="/">
                     <SearchIcon className="searchbar-icon" fontSize="small"/>
                     </Link>
-
+ */}
             </div>
 
                 <section className="sub-nav">
                     <ul>
                         <li><Link to={'/YourEvents'}><h2>Your Events</h2></Link></li>
-                        <li><Link to={'/TodaysEvents'}><h2>Today's Events</h2></Link></li>
+                        <li><Link to={'/TodaysEvents'}><h2>Current Events</h2></Link></li>
 
                     </ul>
                 </section>
@@ -97,7 +97,7 @@ class Dashboard extends Component {
                 </div>
 
                 <div className="column" onClick="openTab('b1')" >
-                    <Link to="/VolunteerEvents">                    
+                    <Link to="/ArtEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
                         <h2>Volunteer</h2>

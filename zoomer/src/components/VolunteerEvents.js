@@ -12,6 +12,7 @@ class Volunteer extends Component {
         super(props)
         this.state = {
            results: [],
+            addedItems:[]           
         };
     }
 
@@ -31,7 +32,8 @@ class Volunteer extends Component {
 
     handleClick = () => {
         this.setState({
-            bgImg: 'rgb( 255, 194, 13)'
+            bgImg: 'red'
+            
         })
     }
 
@@ -60,10 +62,7 @@ class Volunteer extends Component {
  
                     <div className="favoriteBorder">
                         
-                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
-
-                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                         <FavoriteIcon className="favoriteBorderActive"  /> 
                     </div>
 
                    <div className="EventsCardContent">
