@@ -1,9 +1,15 @@
-.body, html {
-  height: 100%;
-  width: 100%;
+body, html {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
   font-family: "Roboto";
   text-align: center;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
+
 
 /* -------------- HEADER ------------ */
 
@@ -30,8 +36,8 @@
   min-height: 40vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(16px + 2vmin);
-  padding: 4%;
+  font-size: calc(14px + 2vmin);
+  padding: 1%;
 
 }
 
@@ -54,8 +60,9 @@
   display: flex;
   float: left;
   list-style-type: none;
-  font-family: "Baumans";
-  padding: 18px;
+  font-family: "Capriola";
+  padding: 30px;
+  font-size: calc(8px + 2vmin);
 }
 
 
@@ -76,7 +83,8 @@
 }
 
 .nav-dropdown, a:hover{
- color: 	rgb(212, 230, 241);
+ color: rgb(209, 242, 235 );
+
 
 }
 
@@ -84,7 +92,7 @@
 .dropdown:hover .dropdown-content {
   margin: 5%;
   display: block;
-  padding: 2%;
+  padding: 3%;
 
 
 }
@@ -118,7 +126,7 @@ li .loginProfile {
 }
 
 .login {
-  margin-top: 5%;
+  margin: 5%;
 
 }
 
@@ -128,8 +136,7 @@ li .loginProfile {
 .searchbar {
   border-radius: 999px;
   padding: 1%;
-  margin-top: 5%;
-  margin-right: 1%;
+  margin-top: 3%;
   width: 50%;
   font-size: 11pt;
 }
@@ -143,7 +150,29 @@ input {
   background-color: rgb(173, 235, 235);
 }
 
+.btn {
+  font-family: "Telex";
+  padding: .5%;
+  margin: 1%;
+  width: 13%;
+  font-size: medium;
+  border-radius: 999px;
+  background-color: white;
+}
 
+
+.active, .btn:hover {
+  background-color: rgb(  207, 234, 228 );
+
+}
+
+.btn a {
+  color: black;
+}
+
+.EventHeader {
+  margin: 3%;
+}
 
 /* ----------- DASHBOARD ------------- */
 
@@ -151,25 +180,27 @@ input {
   color: black;
 }
 
-.dashboard-div, a {
+.dashboard-div {
   text-decoration: none;
   color: white;
   width: 100%;
-
 }
 
+
+  
  .column {
   display: inline-block;
   align-items: center;
   width: 30%;
   padding: 3%;
+  
 
 } 
 
 
 .row {
   display: flex;
-
+  
 }
 
 .row:after {
@@ -180,20 +211,17 @@ input {
 
  .card {
   box-shadow: 2px 4px 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 15%;
+  padding: 10%;
   text-align: center;
-  background-color: rgb( 184, 233, 236);
-  min-width: 50px;
+  background-color:  rgb(209, 242, 235 );
   display: grid;
   border-radius: 3%;
   grid-gap: 5px;
+  color:  rgb( 27, 38, 49 );
 
 } 
 
- .card a {
-   color:  rgb(85, 91, 91);
-   ;
- }
+
 
  .card:hover {
   transform: scale(1.04);
@@ -206,52 +234,72 @@ input {
 
 }
 
-.host-event a {
-    color: black;
-}
 
 .EventsCard {
   border: solid;
+  border-radius: 3%;
   display: inline-block;
   justify-content: row;
-  padding: 2% 5%;
-  margin: 3%;
-  width: 20%;
-  height: 10%;
+  padding: 2% 3%;
+  margin: 2%;
+  width: 25%;
+}
+
+.EventsCard:hover {
+  box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.2);
+  border-color: silver;
+}
+
+
+.favoriteBorder {
+  float: right;
+
+}
+  
+.favoriteBorder > a {
+  color: black;
+}
+
+.favoriteBorder > a:hover {
+  color: rgb( 255, 194, 13);
 
 }
 
 
 
+/* ----------- FORM ------------- */
 form {
-  display: block;
-  align-items: right;
-  line-height: 40px;
+  display: inline-block;
+  margin-top: 5%;
+  max-width: 40%;
 }
 
-form input{
-  padding: 6px;
-  font-size: 11pt;
-}
 
 input {
   border-radius: 999px;
+  padding: 6px;
+  font-size: 11pt;
+
 }
 
-.fields {
-  margin: 3%;
-}
 
 .register-btn {
-  width: 10%;
-  padding: 8px;
+  padding: 11px;
   font-size: 10pt;
   border-radius: 999px;  
+
+}
+
+
+.fields{
+  justify-content: flex-start;
+  float: left;
+  padding: 5%;
 }
 
 /* ----------- ABOUT ------------- */
 .AboutSection {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .AboutSection a {
@@ -272,12 +320,14 @@ hr {
 /* ----------- FOOTER ------------- */
 
 .footer {
-  margin-top: 10%;
+  margin-top: 3%;
+  padding-top: 2%;
   position: absolute;
-  width: 99%;
+  width: 100vw;
   font-family: "Roboto";
   background-color: rgb( 242, 243, 244);
   color:  rgb(0, 77, 77); 
+  font-size: small;
 }
 
 .Credits a {
@@ -297,10 +347,12 @@ hr {
 
 /* ----------- EventGrid ------------- */
 
+
+
 .sub-nav ul {
   display: flex;
   justify-content: space-evenly;
-  color: rgb(0, 77, 77);
+  color: black;
 }
 .sub-nav li {
   transition: background-color 0.3s;
@@ -312,13 +364,13 @@ hr {
   align-items: center;
 }
 .sub-nav a {
-  color: rgb(0, 77, 77);
+  color: black;
 }
 
-a:hover {
-  transform: scale(1.1);
+.sub-nav a:hover {
+  color: rgb(212, 230, 241);
 }
-  
+
 .events-grid {
   margin: 50px;
   display: grid;

@@ -15,17 +15,16 @@ const About = () => {
                     <br /> and many more services across the globe, virtually!</p>
                 <br />
                 <p>We have an opportunity to help make worldwide events and personal goals
-                    <br />even more accessible through our online platform.</p>
+                    <br />even more attainable through our online platform.</p>
                 <br />
-                <p>Traveling nomads, students, teachers and athletes
-                    <br />can join virtual meetups, attend webinars or explore new hobbies
-                    <br />with the help of our global partners.</p>
+                <p>Traveling nomads, creators, thinkers and do-ers
+                    <br />can all join virtual meetups, attend webinars, explore new hobbies
+                    <br />and more with the help of our global partners.</p>
                 <br />
-                <br />
+
                 <Link to="./Dashboard" ><h3>Click here to get started!</h3></Link>
                 <br />
-                <br />
-                <br />
+
 
             </div>
 

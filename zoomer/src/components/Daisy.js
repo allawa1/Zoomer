@@ -4,13 +4,15 @@ const Daisy = () => {
     return (
 
         <div class="container">
+            <form  action="mailto:daisy@zoomer.com" method="get" enctype="text/plain">
             <p>About Daisy</p>
             <img src="" alt=""></img>
-            <h2>Jane Doe</h2>
+            <h2>Daisy</h2>
             <p class="title">CEO & Founder</p>
             <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <p>daisy@zoomer.com</p>
             <p><button class="button">Contact</button></p>
+            </form>
         </div>
     )
 

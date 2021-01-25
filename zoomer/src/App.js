@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing'
 import Form from './components/Form'
+import YourEvents from './components/YourEvents'
 import AllEvents from './components/AllEvents'
 import TodaysEvents from './components/TodaysEvents'
 import EducationEvents from './components/EducationEvents'
@@ -49,6 +50,7 @@ class App extends Component {
           <Route exact path="/Form" component={Form} />                
           <Route exact path="/Credits" component={Credits} />
           <Route exact path="/Login" component={Login} /> 
+          <Route exact path="/YourEvents" component={YourEvents} />               
           <Route exact path="/AllEvents" component={AllEvents} />     
           <Route exact path="/TodaysEvents" component={TodaysEvents} />           
           <Route exact path="/EducationEvents" component={EducationEvents} />   

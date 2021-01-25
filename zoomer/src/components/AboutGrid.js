@@ -29,7 +29,7 @@ export class _AboutGrid extends Component {
                 <div className="flip-card" key={box}>
                         <div className="flip-card-inner" onClick={(ev)=>{this.redirectClick(box)}}> 
                             <div className="flip-card-front">
-                                <h1 className="title">{this.capitalizeBox(box)}<span className="dote"></span></h1>
+                                <h3 className="title">{this.capitalizeBox(box)}<span className="dote"></span></h3>
                             </div>
                             <div className="flip-card-back">
                                 <p> <Link to="/Alexia">See more bio</Link></p>

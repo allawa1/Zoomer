@@ -4,14 +4,15 @@ const Christy = () => {
     return (
 
         <div class="container">
+            <form  action="mailto:christy@zoomer.com" method="get" enctype="text/plain">
             <p>About Christy</p>
             <img src="" alt=""></img>
             <h2>Christy Phommasak</h2>
             <p class="title">CEO & Founder</p>
-            <p>Software Enthusiast on a journey of influencing positive habits 
-                <br />and making personal and professional growth more virtually accessible. </p>
+            <p>Software Enthusiast on a journey to make personal goals and professional development more accessible. </p>
             <p>christy@zoomer.com</p>
-            <p><button class="button">Contact</button></p>
+            <p><button class="button" >Contact</button></p>
+            </form>
         </div>
     )
 
