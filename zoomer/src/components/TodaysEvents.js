@@ -58,28 +58,32 @@ class TodaysEvents extends Component {
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
-                                        
+
+                    <div className="favoriteBorder">
+                        
+                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
+
+                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                    </div>
+
+                   <div className="EventsCardContent">
                     <h2>{item.title}</h2>
-                                 
+
+ 
                     <p>{item.description}</p>         
+
 
                     <h4>Date: </h4>
                     <p>{item.date}</p>
-                    
+
                     <h4>Event ID: </h4>
                     <p>{item.eventID}</p>
+                 </div>
 
 
-                  <span class="stackIcons">
-                        <div className="favoriteBorder">
-                            
-                            <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                            onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
 
-                            <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
-                        </div>
-                    </span>
-
+   
                 </div>)}
                 </div>
             </div>
@@ -87,4 +91,5 @@ class TodaysEvents extends Component {
         )
     }
 }
+
 export default TodaysEvents
