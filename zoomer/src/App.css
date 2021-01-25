@@ -20,12 +20,6 @@ body, html {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 
 .App-header {
   background-image: url("./assets/images/sunrise.jpg");
@@ -33,27 +27,13 @@ body, html {
   background-size: 100% 200%;
   background-position: center center;
   background-color: rgb(173, 235, 235);
-  min-height: 40vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(14px + 2vmin);
+  font-size: calc(20px + 2vmin);
   padding: 1%;
 
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 
 .App-navbar li {
@@ -174,6 +154,93 @@ input {
   margin: 3%;
 }
 
+
+/* ----------- LANDING ------------- */
+
+@media screen and (max-width: 200px) {
+  .Discover-img, .Join-img {
+  width: 100%;
+  }
+}
+
+.Landing {
+  width: 100%;
+  display: block;
+  align-items: center;
+
+}
+
+
+.Landing-div {
+  min-height: 575px;
+  max-width: 100%;
+  margin: 6%;
+  border: 3px solid #E18728;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Landing-header {
+  font-family: "Bowlby One";
+  font-size: 18pt;  
+  color: rgb(173, 235, 235);
+}
+
+.Landing-description{
+  display: block;  
+  text-align: center;
+  padding-top: 5% ;
+  font-family: "Capriola";  
+  font-size: 16pt;
+
+}
+
+
+.Discover-img, .Join-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(173, 235, 235);
+  min-height: 300px;
+  min-width: 300px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+
+.Refresh-img, .Host-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(173, 235, 235);
+  min-height: 300px;
+  min-width: 300px;
+  float: right;
+  border-radius: 50%;
+  z-index: 3;
+  margin-right: 10%;
+}
+
+.Discover-img:hover .Refresh-img:hover .Join-img:hover .Host-img:hover{
+  transform: scale(1.04);
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;  
+
+}
+
+
+.Landing-description > a {
+  color: black;
+}
+
+.Landing-description > a:hover {
+  color: rgb( 255, 194, 13);
+}
+
+
+
 /* ----------- DASHBOARD ------------- */
 
 .searchbar-icon  {
@@ -245,11 +312,16 @@ input {
   width: 30%;
   height: 400px;
   overflow: hidden;
+  vertical-align: middle;
 }
 
 .EventsCard:hover {
   box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-color: silver;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: .1s;  
 }
 
 .EventsCardContent {
