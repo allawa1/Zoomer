@@ -17,6 +17,8 @@ const Credits = () => {
             <span>Photo by <a href="https://unsplash.com/@othentikisra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">israel palacio</a> on <a href="https://unsplash.com/s/photos/microphone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>       
             <span>Photo by <a href="https://unsplash.com/@iamhiteshdewasi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hitesh Dewasi</a> on <a href="https://unsplash.com/s/photos/dj?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
             <span>Photo by <a href="https://unsplash.com/@jmvillejo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jed Villejo</a> on <a href="https://unsplash.com/s/photos/community?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>        
+            <span>Photo by <a href="https://unsplash.com/@kylejeffreys?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kyle Johnson</a> on <a href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>        
+            <span>Photo by <a href="https://unsplash.com/@jeremybishop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jeremy Bishop</a> on <a href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>        
         </div>
     )
 }
