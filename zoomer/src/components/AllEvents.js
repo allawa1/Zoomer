@@ -41,14 +41,7 @@ class AllEvents extends Component {
 
     }
 
-    getFavorites = () => {
 
-        return (
-            this.favorites
-        )
-            console.log(this.favorites)
-
-    }
 
     render() {
 
@@ -83,26 +76,13 @@ class AllEvents extends Component {
 
                             <div className="favoriteBorder">
 
-                                <Link to="#">
+                
                                     <FavoriteIcon className="favoriteBorderActive"
-                                        onClick={() => this.handleClick(item)} /> </Link>
+                                        onClick={() => this.handleClick(item)} /> 
                             </div>
 
                             <div className="EventsCardContent">
                                 <h2>{item.title}</h2>
-
-
-                    <div className="favoriteBorder">
-                        
-    
-                        <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={() => this.handleClick(item)}  />
-
-                        <FavoriteBorderIcon />
-
-                    </div>
-
-
                                 <p>{item.description}</p>
 
 

@@ -1,10 +1,6 @@
 import { React, Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
-
-import AllEvents from './AllEvents'
-
 import '../App.css';
 import './Credits';
 
