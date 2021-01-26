@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link} from 'react-router-dom';
 
-import zoom from '../assets/images/zoom.jpg';
-import join from '../assets/images/join.jpg';
 
 import '../App.css';
 

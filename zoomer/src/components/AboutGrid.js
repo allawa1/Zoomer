@@ -32,7 +32,7 @@ export class _AboutGrid extends Component {
                                 <h3 className="title">{this.capitalizeBox(box)}<span className="dote"></span></h3>
                             </div>
                             <div className="flip-card-back">
-                               <p> <Link to="/Alexia">See more bio</Link></p>
+                                <p> <Link to="/Alexia">See more bio</Link></p>
                             </div>
 
                             <div className="flip-card-back">

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 
 import { Link } from 'react-router-dom';
-import SearchIcon from '@material-ui/icons/Search';
+
 
 
 

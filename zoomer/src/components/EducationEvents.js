@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
@@ -18,11 +18,9 @@ class EducationEvents extends Component {
 
 
     callAPI() {
-
-        fetch(process.env.REACT_APP_DOMAIN + "/events/education")
-            .then(res => res.json())
-            .then(res => this.setState({ results: res }));
-
+    fetch(process.env.REACT_APP_DOMAIN + "/events/education")
+        .then(res => res.json())
+        .then(res => this.setState({ results: res }));
     }
 
     componentWillMount() {

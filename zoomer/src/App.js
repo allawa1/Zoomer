@@ -15,7 +15,6 @@ import VolunteerEvents from './components/VolunteerEvents'
 import ArtEvents from './components/ArtEvents'
 import CareerEvents from './components/CareerEvents'
 
-import Axios from 'axios'
 
 import Alexia from './components/Alexia';
 import Daisy from './components/Daisy';

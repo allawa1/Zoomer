@@ -1,8 +1,7 @@
 import { React, Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+
 
 import AllEvents from './AllEvents'
 
@@ -13,30 +12,15 @@ class YourEvents extends Component {
 
     constructor(props) {
         super(props)
+        let cardEvents = JSON.parse(localStorage.getItem('selectedCards'))
+        console.log(cardEvents)
         this.state = {
-            cardEvents: [],
+            cardEvents: cardEvents,
             results: []            
         };
 
 
     }
-
-
-
-
-  componentWillMount() {
-    let cardEvents = JSON.parse(localStorage.getItem('selectedCards'))
-      console.log(cardEvents)
-
-    }
-
-    handleClick = (card) => {
-        let cards = [];
-        cards.push(card);
-        localStorage.setItem('selectedCards', JSON.stringify(cards))
-        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
-    }
-
 
     render () {
 
@@ -60,7 +44,10 @@ class YourEvents extends Component {
             <h2 className="EventHeader">Your Events</h2>
 
                 <div className="EventsContainer">
-                {this.state.results.map((item, i) => 
+
+                    <p>{this.state.cardEvents[0].title}</p>
+                    <p>{this.state.cardEvents[0].description}</p>
+                {/* {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
 
                     <div className="favoriteBorder">
@@ -87,7 +74,7 @@ class YourEvents extends Component {
 
 
    
-                </div>)}
+                </div>)} */}
                 </div>
             </div>
 
