@@ -24,7 +24,7 @@ const About = () => {
                     <br />and more with the help of our global partners.</p>
                 <br />
 
-                <Link to="./Dashboard" ><h3>Click here to get started!</h3></Link>
+                <Link to="./Login" ><h3>Click here to get started!</h3></Link>
                 <br />
 
 

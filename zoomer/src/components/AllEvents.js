@@ -8,12 +8,15 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import '../App.css';
 
 
+
 class AllEvents extends Component {
     constructor(props) {
         super(props)
         this.state = {
             results: [],
         };
+
+        this.handleClick = this.handleClick.bind(this)
     }
 
     callAPI() {
@@ -29,11 +32,13 @@ class AllEvents extends Component {
     }
 
 
-    handleClick = () => {
-        this.setState({
-            bgImg: 'rgb( 255, 194, 13)'
-        })
+    handleClick = (card) => {
+        let cards = [];
+        cards.push(card);
+        localStorage.setItem('selectedCards', JSON.stringify(cards))
+        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
     }
+
 
     render() {
         return(
@@ -61,7 +66,9 @@ class AllEvents extends Component {
 
                     <div className="favoriteBorder">
                         
-                         <FavoriteIcon className="favoriteBorderActive"  /> 
+                        <Link to="#"> 
+                        <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={() => this.handleClick(item)}  /> </Link>
                     </div>
 
                    <div className="EventsCardContent">
