@@ -27,12 +27,15 @@ class EducationEvents extends Component {
         this.callAPI();
     }
 
-    handleClick = (card) => {
-        let cards = [];
-        cards.push(card);
-        localStorage.setItem('selectedCards', JSON.stringify(cards))
-        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
+    handleClick = (favorite) => {
+        let favorites = [];
+        favorites.push(favorite);
+        localStorage.setItem('setFavorite', JSON.stringify(favorites))
+        
+        console.log('this is cards', JSON.parse(localStorage.getItem('setFavorite')))
+
     }
+
 
     render() {
         return(
@@ -48,40 +51,39 @@ class EducationEvents extends Component {
                     <button className="btn"><Link to="/VolunteerEvents">Volunteer</Link></button>                    
                     <br />                    
                     <button className="btn"><Link to="/YourEvents">Your Events</Link></button>
-                    <button className="btn"><Link to="/TodaysEvents">Current Events</Link></button>                                   
                 </div> 
+
+            <div className="EventsContainer">
 
                 <h2 className="EventHeader">Education</h2>      
 
-                <div className="EventsContainer">
-                {this.state.results.map((item, i) => 
-                <div key={i} className="EventsCard">
 
-                    <div className="favoriteBorder">
-                        
-                        <Link to="#"> 
-                        <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={() => this.handleClick(item)}  /> </Link>
-                    </div>
+                    {this.state.results.map((item, i) =>
+                        <div key={i} className="EventsCard">
 
-                   <div className="EventsCardContent">
-                    <h2>{item.title}</h2>
+                            <div className="favoriteBorder">
 
- 
-                    <p>{item.description}</p>         
+                
+                                    <FavoriteIcon className="favoriteBorderActive"
+                                        onClick={() => this.handleClick(item)} /> 
+                            </div>
+
+                            <div className="EventsCardContent">
+                                <h2>{item.title}</h2>
+                                <p>{item.description}</p>
 
 
-                    <h4>Date: </h4>
-                    <p>{item.date}</p>
+                                <h4>Date: </h4>
+                                <p>{item.date}</p>
 
-                    <h4>Event ID: </h4>
-                    <p>{item.eventID}</p>
-                 </div>
+                                <h4>Event ID: </h4>
+                                <p>{item.eventID}</p>
+                            </div>
 
 
 
-   
-                </div>)}
+
+                        </div>)}
                 </div>
             </div>
 

@@ -28,7 +28,8 @@ class AllEvents extends Component {
 
     componentWillMount() {
         this.callAPI();
-
+        
+ 
     }
 
 
@@ -62,8 +63,6 @@ class AllEvents extends Component {
                     <button className="btn"><Link to="/VolunteerEvents">Volunteer</Link></button>
                     <br />
                     <button className="btn"><Link to="/YourEvents">Your Events</Link></button>
-
-                    <button className="btn"><Link to="/TodaysEvents">Current Events</Link></button>                                   
                </div> 
 
 
@@ -72,7 +71,7 @@ class AllEvents extends Component {
                     <h2 className="EventHeader">All Events</h2>
 
                     {this.state.results.map((item, i) =>
-                        <div key={i} className="EventsCard">
+                        <div key={item} className="EventsCard">
 
                             <div className="favoriteBorder">
 

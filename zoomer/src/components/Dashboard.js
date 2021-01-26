@@ -46,7 +46,6 @@ class Dashboard extends Component {
                 <section className="sub-nav">
                     <ul>
                         <li><Link to={'/YourEvents'}><h2>Your Events</h2></Link></li>
-                        <li><Link to={'/TodaysEvents'}><h2>Current Events</h2></Link></li>
 
                     </ul>
                 </section>
