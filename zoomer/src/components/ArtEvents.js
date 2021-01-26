@@ -57,8 +57,7 @@ class ArtEvents extends Component {
                         
     
                             <FavoriteIcon className="favoriteBorderActive" />
-    
-                            <FavoriteBorderIcon />
+
                         
 
                     </div>
