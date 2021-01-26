@@ -8,7 +8,9 @@ class YourEvents extends Component {
 
     constructor(props) {
         super(props)
-        let cardEvents = JSON.parse(localStorage.getItem('selectedCards'))
+        let cardEvents = JSON.parse(localStorage.getItem('setFavorite'))
+        localStorage.setItem('setCardEvents', JSON.stringify(cardEvents))
+
         console.log(cardEvents)
         this.state = {
             cardEvents: cardEvents,
@@ -17,6 +19,7 @@ class YourEvents extends Component {
 
 
     }
+
 
     render () {
 
@@ -34,43 +37,19 @@ class YourEvents extends Component {
             <button className="btn"><Link to="/VolunteerEvents">Volunteer</Link></button>            
             <br />                    
             <button className="btn active"><Link to="/YourEvents">Your Events</Link></button>
-            <button className="btn"><Link to="/TodaysEvents">Current Events</Link></button>                                   
             </div> 
 
             <h2 className="EventHeader">Your Events</h2>
 
-                <div className="EventsContainer">
-
-                    <p>{this.state.cardEvents[0].title}</p>
-                    <p>{this.state.cardEvents[0].description}</p>
-                {/* {this.state.results.map((item, i) => 
-                <div key={i} className="EventsCard">
-
-                    <div className="favoriteBorder">
-                        
-                        <Link to="#"> 
-                        <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={() => this.handleClick(item)}  /> </Link>
-                    </div>
-                    
+                <div className="YourEventsCard">
                    <div className="EventsCardContent">
-                    <h2>{item.title}</h2>
 
- 
-                    <p>{item.description}</p>         
-
-
-                    <h4>Date: </h4>
-                    <p>{item.date}</p>
-
-                    <h4>Event ID: </h4>
-                    <p>{item.eventID}</p>
+                    <h2>{this.state.cardEvents[0].title}</h2>
+                    <p>{this.state.cardEvents[0].description}</p>
+                    <h4>Date:</h4>
+                    <p> {this.state.cardEvents[0].date}</p>
                  </div>
-
-
-
    
-                </div>)} */}
                 </div>
             </div>
 

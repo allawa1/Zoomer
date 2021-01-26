@@ -372,7 +372,20 @@ background-color:'red'
 }
 
 
-
+.YourEventsCard {
+  position: relative;
+  display: flex;
+  border: solid;
+  border-radius: 3%;
+  display: inline-block;
+  justify-content: row;
+  padding: 2% 3%;
+  margin: 2%;
+  width: 30%;
+  height: 10%;
+  overflow: hidden;
+  vertical-align: middle;  
+}
 
 /* ----------- FORM ------------- */
 form {

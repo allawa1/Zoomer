@@ -34,7 +34,7 @@ const Landing = () => {
                     </div>
 
                         <p  className="Landing-description">Refresh your skills. Browse tutorials, exam preps and mock interviews to boost your career goals.</p>
-                        <p  className="Landing-description">Math, Science, Photograpy, Accounting...</p>
+                        <p  className="Landing-description">Math, Science, Photography, Accounting...</p>
                         <p  className="Landing-description">You name it!</p>
 
                         <p  className="Landing-description Landing-register"><Link to="/Dashboard">Get Started</Link></p>

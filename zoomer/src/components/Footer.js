@@ -12,7 +12,6 @@ const Footer = () => {
         <div className="footer">
 
             <p className="Credits"><Link to="/Credits">Credits</Link></p>
-             <p>All rights reserved</p>
             <p><img src={copywright} alt="copywright" height="12px" width="13px"/><b> ZOOMER</b></p>    
             
         </div>
