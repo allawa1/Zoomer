@@ -52,7 +52,7 @@ class Dashboard extends Component {
 
 
             <div className="row" >
-                <div className="column" onclick="openTab('b1')" >
+                <div className="column"  >
                     <Link to={"/AllEvents"}>
                     <div className="card">
                         <hr width="50%"/>
@@ -62,7 +62,7 @@ class Dashboard extends Component {
                     </Link>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <Link to="/ArtEvents">
                     <div className="card">
                         <hr width="50%"/>                        
@@ -72,7 +72,7 @@ class Dashboard extends Component {
                     </Link>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <Link to="/CareerEvents">
                     <div className="card">
                         <hr width="50%"/>                        
@@ -85,7 +85,7 @@ class Dashboard extends Component {
             </div>
 
             <div className="row" >
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <Link to="/EducationEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
@@ -95,7 +95,7 @@ class Dashboard extends Component {
                     </Link>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column" >
                     <Link to="/ArtEvents">                    
                     <div className="card">
                         <hr width="50%"/>                        
@@ -105,7 +105,7 @@ class Dashboard extends Component {
                     </Link>
                 </div>
 
-                <div className="column" onClick="openTab('b1')" >
+                <div className="column"  >
                     <Link to="/Form">
                     <div className="card host-event">
                         <hr width="50%"/>                        
