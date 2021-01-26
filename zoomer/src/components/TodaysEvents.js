@@ -43,6 +43,7 @@ class TodaysEvents extends Component {
             <div className="container">
 
                 <div id="eventButtons">
+                    <br />                    
                     <button className="btn"><Link to="/AllEvents">All Events</Link></button>                    
                     <button className="btn"><Link to="/ArtEvents">Art</Link></button>
                     <button className="btn"><Link to="/CareerEvents">Career</Link></button>
@@ -50,7 +51,7 @@ class TodaysEvents extends Component {
                     <button className="btn"><Link to="/VolunteerEvents">Volunteer</Link></button>                    
                     <br />                    
                     <button className="btn"><Link to="/YourEvents">Your Events</Link></button>
-                    <button className="btn active"><Link to="/TodaysEvents">Today's Events</Link></button>                                    
+                    <button className="btn active"><Link to="/TodaysEvents">Current Events</Link></button>                                    
                 </div> 
                
                 <h2 className="EventHeader">Current Events</h2>                

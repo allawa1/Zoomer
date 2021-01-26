@@ -27,7 +27,7 @@ body, html {
   background-size: 100% 200%;
   background-position: top center;
   background-color: rgb(173, 235, 235);
-  min-height: 50vh;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
@@ -130,25 +130,33 @@ input {
   background-color: rgb(173, 235, 235);
 }
 
+
 .btn {
   font-family: "Telex";
-  padding: .5%;
+  padding: .3%;
   margin: 1%;
-  width: 13%;
-  font-size: medium;
+  min-width: 11%;
+  font-size: small;
   border-radius: 999px;
   background-color: white;
 }
 
-
+ 
 .active, .btn:hover {
-  background-color: RGB(240, 235, 234);
-
+  background-color: rgb(173, 235, 235);
+  border: none;
+  
 }
 
 .btn a {
   color: black;
 }
+
+.eventButtons {
+  display: relative;
+  align-items: center;
+}
+
 
 .EventHeader {
   margin: 3%;
@@ -174,7 +182,7 @@ input {
 .Landing-div {
   min-height: 480px;
   max-width: 90%;
-  margin: 6%;
+  margin: 2%;
   border-radius: 10px;
   background-color: white;
 }
