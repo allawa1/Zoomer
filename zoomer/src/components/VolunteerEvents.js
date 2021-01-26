@@ -29,14 +29,12 @@ class Volunteer extends Component {
     }
 
     
-
-    handleClick = () => {
-        this.setState({
-            bgImg: 'red'
-            
-        })
+    handleClick = (card) => {
+        let cards = [];
+        cards.push(card);
+        localStorage.setItem('selectedCards', JSON.stringify(cards))
+        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
     }
-
 
     render() {
         return(
@@ -59,10 +57,12 @@ class Volunteer extends Component {
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
                 <div key={i} className="EventsCard">
- 
+
                     <div className="favoriteBorder">
                         
-                         <FavoriteIcon className="favoriteBorderActive"  /> 
+                        <Link to="#"> 
+                        <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={() => this.handleClick(item)}  /> </Link>
                     </div>
 
                    <div className="EventsCardContent">
