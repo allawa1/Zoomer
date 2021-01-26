@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
@@ -30,12 +29,12 @@ class TodaysEvents extends Component {
     }
 
 
-    handleClick = () => {
-        this.setState({
-            bgImg: 'rgb( 255, 194, 13)'
-        })
+    handleClick = (card) => {
+        let cards = [];
+        cards.push(card);
+        localStorage.setItem('selectedCards', JSON.stringify(cards))
+        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
     }
-
 
     render() {
         return(
@@ -53,7 +52,7 @@ class TodaysEvents extends Component {
                     <button className="btn active"><Link to="/TodaysEvents">Today's Events</Link></button>                                    
                 </div> 
                
-                <h2 className="EventHeader">Today's Events</h2>                
+                <h2 className="EventHeader">Current Events</h2>                
                 
                 <div className="EventsContainer">
                 {this.state.results.map((item, i) => 
@@ -61,10 +60,9 @@ class TodaysEvents extends Component {
 
                     <div className="favoriteBorder">
                         
-                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
-
-                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                        <Link to="#"> 
+                        <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={() => this.handleClick(item)}  /> </Link>
                     </div>
 
                    <div className="EventsCardContent">

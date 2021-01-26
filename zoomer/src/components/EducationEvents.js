@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
@@ -27,12 +27,13 @@ class EducationEvents extends Component {
         this.callAPI();
     }
 
-    handleClick = () => {
-        this.setState({
-            bgImg: 'rgb( 255, 194, 13)'
-        })
+    handleClick = (card) => {
+        let cards = [];
+        cards.push(card);
+        localStorage.setItem('selectedCards', JSON.stringify(cards))
+        console.log('this is cards', JSON.parse(localStorage.getItem('selectedCards')))
     }
-
+    
     render() {
         return(
 
@@ -57,10 +58,9 @@ class EducationEvents extends Component {
 
                     <div className="favoriteBorder">
                         
-                        <Link to="#"> <FavoriteIcon className="favoriteBorderActive" 
-                        onClick={this.handleClick} style={{color:this.state.bgImg}} typeReversed/> </Link>
-
-                        <Link to="#"> <FavoriteBorderIcon className="favoriteBorderClicked" typeReversed/> </Link>                    
+                        <Link to="#"> 
+                        <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={() => this.handleClick(item)}  /> </Link>
                     </div>
 
                    <div className="EventsCardContent">

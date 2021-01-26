@@ -1,11 +1,27 @@
-import React from 'react';
+import { React, Component } from 'react';
 import { Link } from 'react-router-dom';
+
 
 
 import '../App.css';
 import './Credits';
 
-const YourEvents = () => {
+class YourEvents extends Component {
+
+    constructor(props) {
+        super(props)
+        let cardEvents = JSON.parse(localStorage.getItem('selectedCards'))
+        console.log(cardEvents)
+        this.state = {
+            cardEvents: cardEvents,
+            results: []            
+        };
+
+
+    }
+
+    render () {
+
     return (
 
         <div className="container">
@@ -20,11 +36,47 @@ const YourEvents = () => {
             <button className="btn"><Link to="/TodaysEvents">Today's Events</Link></button>                                   
             </div> 
 
-
             <h2 className="EventHeader">Your Events</h2>
 
-        </div>
-    )
+                <div className="EventsContainer">
+
+                    <p>{this.state.cardEvents[0].title}</p>
+                    <p>{this.state.cardEvents[0].description}</p>
+                {/* {this.state.results.map((item, i) => 
+                <div key={i} className="EventsCard">
+
+                    <div className="favoriteBorder">
+                        
+                        <Link to="#"> 
+                        <FavoriteIcon className="favoriteBorderActive" 
+                        onClick={() => this.handleClick(item)}  /> </Link>
+                    </div>
+                    
+                   <div className="EventsCardContent">
+                    <h2>{item.title}</h2>
+
+ 
+                    <p>{item.description}</p>         
+
+
+                    <h4>Date: </h4>
+                    <p>{item.date}</p>
+
+                    <h4>Event ID: </h4>
+                    <p>{item.eventID}</p>
+                 </div>
+
+
+
+   
+                </div>)} */}
+                </div>
+            </div>
+
+        )
+    }
 }
+
+
 
 export default YourEvents;
